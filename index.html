@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text Editing Page</title>
+    <link rel="stylesheet" href="../Css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <canvas id="myCanvas" width="500" height="600"> </canvas>
+      </div>
+
+      <div id="inside" class="container1">
+        <div style="display: flex; margin-bottom: 30px; width: 400px">
+          <button id="addText" style="padding: 5px; flex-grow: 1">
+            Add Text
+          </button>
+        </div>
+        <div id="select"></div>
+        <div
+          class="edit"
+          style="margin-top: 10px; display: flex; justify-content: center"
+        >
+          <div style="margin-top: 10px">
+            <div style="margin-top: 20px">
+              <label>Font Family:</label>
+              <select id="fontFamilySelect">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Impact">Impact</option>
+                <option value="Palatino Linotype">Palatino Linotype</option>
+                <option value="Lucida Console">Lucida Console</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+              </select>
+            </div>
+
+            <div style="margin-top: 20px">
+              <label>Font Size:</label>
+              <select id="fontSizeSelect">
+                <option value="32">32px</option>
+                <option value="12">12px</option>
+                <option value="16">16px</option>
+                <option value="20">20px</option>
+                <option value="24">24px</option>
+                <option value="28">28px</option>
+              </select>
+            </div>
+
+            <div style="margin-top: 20px">
+              <label>Font Color:</label>
+              <select id="fontColorInput">
+                <option value="#FF0000">Strong Red</option>
+                <option value="#FFFF00">Vivid Yellow</option>
+                <option value="#00FF00">Lime Green</option>
+                <option value="#0000FF">Deep Blue</option>
+                <option value="#FF00FF">Rich Magenta</option>
+                <option value="#FFA500">Vibrant Orange</option>
+                <option value="#800080">Royal Purple</option>
+                <option value="#00FFFF">Bright Cyan</option>
+                <option value="#FF69B4">Hot Pink</option>
+                <option value="#8B4513">Dark Brown</option>
+              </select>
+              <div id="unre" style="display: flex; margin-top: 30px; gap: 5px">
+                <button id="undo" style="padding: 5px; flex-grow: 1">
+                  Undo
+                </button>
+                <button id="redo" style="padding: 5px; flex-grow: 1">
+                  Redo
+                </button>
+              </div>
+              <div style="display: flex; margin-top: 30px; gap: 5px">
+                <button id="save" style="padding: 5px; flex-grow: 1">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
+    ></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js"
+    ></script>
+
+    <script type="module" src="../Script/index.js"></script>
+  </body>
+</html>

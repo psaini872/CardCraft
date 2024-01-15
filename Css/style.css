@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  border: 1px solid black;
+  cursor: pointer;
+  /* margin-bottom: 15px; */
+  /* background-color: #80bcbd; */
+  background-image: url('https://storage.googleapis.com/celebrare-b43da.appspot.com/videoinvitations/video_1102/images/blessing_1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.wrap {
+  width: 500px;
+  height: 600px;
+}
+.wrap {
+  position: relative;
+}
+
+/* .wrap > * {
+  position: absolute;
+} */
+#select {
+  display: block;
+  height: 80px;
+}
+
+#textInput {
+  height: 100px;
+  width: 400px;
+  display: block;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+#textInput1 {
+  display: block;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  margin-left: 200px;
+  /* justify-content: center; */
+  margin-top: 100px;
+}
+
+.container1 {
+  padding: 5px;
+}
+.custom-textarea {
+  /* border-radius: 8px; */
+  font-size: 16px;
+
+  background-color: transparent;
+  border: none;
+  resize: none;
+  resize: none;
+  overflow: hidden;
+
+  width: auto;
+  height: auto;
+  font-family: Arial, sans-serif;
+  transition: border 0.3s ease-in-out;
+  position: absolute;
+  cursor: grab;
+}
+
+.custom-textarea:focus {
+  outline: none;
+  border: 5px double white;
+  /* resize: both; */
+  border-radius: 8px;
+}
