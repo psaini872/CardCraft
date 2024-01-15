@@ -29,6 +29,7 @@ CardCraft is a web development project that empowers users to design and create 
 
 ## Screenshots
 
+![Screenshot 2024-01-15 at 6 32 40 PM](https://github.com/psaini872/CardCraft/assets/95680839/ecb7b55a-42b2-4732-9931-61c2701ae3df)
 
 
 ## Authors
